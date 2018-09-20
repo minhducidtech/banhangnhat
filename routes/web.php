@@ -14,3 +14,33 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('index',[
+	'as'=>'trangchu',
+	'uses'=>'PageController@getIndex'
+
+]);
+
+Route::get('loai-san-pham',[
+	'as'=>'loai-san-pham',
+	'uses'=>'PageController@getLoaisanpham'
+
+]);
+
+Route::get('chi-tiet-san-pham',[
+	'as'=>'chi-tiet-san-pham',
+	'uses'=>'PageController@getChitietsanpham'
+
+]);
+
+Route::get('lien-he',[
+	'as'=>'lien-he',
+	'uses'=>'PageController@getLienhe'
+
+]);
+
+Route::get('gioi-thieu',[
+	'as'=>'gioi-thieu',
+	'uses'=>'PageController@getGioithieu'
+
+]);
