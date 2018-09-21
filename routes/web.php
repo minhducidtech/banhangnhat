@@ -21,13 +21,13 @@ Route::get('index',[
 
 ]);
 
-Route::get('loai-san-pham',[
+Route::get('loai-san-pham/{type}',[
 	'as'=>'loai-san-pham',
 	'uses'=>'PageController@getLoaisanpham'
 
 ]);
 
-Route::get('chi-tiet-san-pham',[
+Route::get('chi-tiet-san-pham/{id}',[
 	'as'=>'chi-tiet-san-pham',
 	'uses'=>'PageController@getChitietsanpham'
 
@@ -43,4 +43,9 @@ Route::get('gioi-thieu',[
 	'as'=>'gioi-thieu',
 	'uses'=>'PageController@getGioithieu'
 
+]);
+
+Route::get('add-to-cart/{id}',[
+	'as'=>'add-to-cart',
+	'uses'=>'PageController@getAddtoCart'
 ]);

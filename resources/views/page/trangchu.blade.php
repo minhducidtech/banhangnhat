@@ -48,7 +48,7 @@
 											@endif
 
 											<div class="single-item-header">
-												<a href="product.html"><img src="source/image/product/{{$new->image}}" alt="" height="250px"></a>
+												<a href="{{route('chi-tiet-san-pham',$new->id)}}"><img src="source/image/product/{{$new->image}}" alt="" height="250px"></a>
 											</div>
 											<div class="single-item-body">
 												<p class="single-item-title">{{$new->name}}</p>
@@ -62,8 +62,8 @@
 												</p>
 											</div>
 											<div class="single-item-caption">
-												<a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-												<a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+												<a class="add-to-cart pull-left" href="{{route('add-to-cart',$new->id)}}"><i class="fa fa-shopping-cart"></i></a>
+												<a class="beta-btn primary" href="{{route('chi-tiet-san-pham',$new->id)}}">Chi tiết <i class="fa fa-chevron-right"></i></a>
 												<div class="clearfix"></div>
 											</div>
 										</div>
@@ -93,7 +93,7 @@
 												<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
 											@endif
 											<div class="single-item-header">
-												<a href="product.html"><img src="source/image/product/{{$sale->image}}" alt="" height="250px"></a>
+												<a href="{{route('chi-tiet-san-pham',$sale->id)}}"><img src="source/image/product/{{$sale->image}}" alt="" height="250px"></a>
 											</div>
 											<div class="single-item-body">
 												<p class="single-item-title">{{$sale->name}}</p>
@@ -107,8 +107,8 @@
 												</p>
 											</div>
 											<div class="single-item-caption">
-												<a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-												<a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+												<a class="add-to-cart pull-left" href="{{route('add-to-cart',$sale->id)}}"><i class="fa fa-shopping-cart"></i></a>
+												<a class="beta-btn primary" href="{{route('chi-tiet-san-pham',$sale->id)}}">Chi tiết <i class="fa fa-chevron-right"></i></a>
 												<div class="clearfix"></div>
 											</div>
 										</div>
