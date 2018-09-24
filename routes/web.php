@@ -49,3 +49,48 @@ Route::get('add-to-cart/{id}',[
 	'as'=>'add-to-cart',
 	'uses'=>'PageController@getAddtoCart'
 ]);
+
+Route::get('del-cart/{id}',[
+	'as'=>'del-cart',
+	'uses'=>'PageController@getDellItemCart'
+]);
+
+Route::get('get-dat-hang',[
+	'as'=>'get-dat-hang',
+	'uses'=>'PageController@getCheckout'
+]);
+
+Route::post('post-dat-hang',[
+	'as'=>'post-dat-hang',
+	'uses'=>'PageController@postCheckout'
+]);
+
+Route::get('get-login',[
+	'as'=>'get-login',
+	'uses'=>'PageController@getLogin'
+]);
+
+Route::post('post-login',[
+	'as'=>'post-login',
+	'uses'=>'PageController@postLogin'
+]);
+
+Route::get('get-signup',[
+	'as'=>'get-signup',
+	'uses'=>'PageController@getSignup'
+]);
+
+Route::post('post-signup',[
+	'as'=>'post-signup',
+	'uses'=>'PageController@postSignup'
+]);
+
+Route::get('get-logout',[
+	'as'=>'get-logout',
+	'uses'=>'PageController@getLogout'
+]);
+
+Route::get('search',[
+	'as'=>'search',
+	'uses'=>'PageController@getSearch'
+]);
